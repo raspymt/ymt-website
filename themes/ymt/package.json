@@ -1,0 +1,23 @@
+{
+    "name": "hugo-theme-ymt",
+    "version": "0.1.1",
+    "description": "Starter files for a Hugo theme with Tailwindcss",
+    "main": "index.js",
+    "repository": "https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter",
+    "author": "Yves-Marie Trublin <yvestrublin@protonmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^3.0.0",
+        "autoprefixer": "^10.0.1",
+        "postcss": "^8.1.4",
+        "postcss-cli": "^8.1.0",
+        "postcss-import": "^13.0.0",
+        "tailwindcss": "^1.9.6"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "maintained node versions",
+        "not dead"
+    ]
+}

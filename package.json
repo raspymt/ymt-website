@@ -1,0 +1,13 @@
+{
+  "name": "ymt-website",
+  "version": "1.0.0",
+  "description": "Website on ymt.thebox.rocks",
+  "scripts": {
+    "dev": "hugo server --disableFastRender"
+  },
+  "author": "Yves-Marie Trublin",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.1.4"
+  }
+}

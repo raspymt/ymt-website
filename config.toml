@@ -1,0 +1,21 @@
+baseURL = "http://ymt.thebox.rocks/"
+languageCode = "en-us"
+title = "Yves-Marie Trublin | Web Developer"
+theme = "ymt"
+
+author = "Yves-Marie Trublin"
+copyright = "Copyright © 2020, Yves-Marie Trublin, all rights reserved."
+
+# Code higlighting settings
+pygmentsCodefences = true
+pygmentsStyle = "vs"
+
+#[params]
+#    name = "Yves-Marie Trublin | Web developer"
+#    description = "My personal website as a web developer."
+#
+#    github_user = "raspymt"
+#    github_repo = "https://github.com/raspymt/hugo-theme-ymt"
+#    github_banner = true
+#
+#    favicon = "favicon.ico"
