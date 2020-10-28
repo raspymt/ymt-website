@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Website on ymt.thebox.rocks",
   "scripts": {
+    "clean": "hugo --gc",
     "dev": "hugo server --disableFastRender"
   },
   "author": "Yves-Marie Trublin",

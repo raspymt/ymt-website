@@ -6,6 +6,9 @@
     "repository": "https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter",
     "author": "Yves-Marie Trublin <yvestrublin@protonmail.com>",
     "license": "MIT",
+    "scripts": {
+        "start": "hugo --gc"
+    },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^3.0.0",
         "autoprefixer": "^10.0.1",
