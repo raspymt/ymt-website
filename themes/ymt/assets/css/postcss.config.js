@@ -1,14 +1,11 @@
 const themeDir = __dirname + '/../../';
-console.log(themeDir)
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
     // Specify the paths to all of the template files in your project
     content: [
         themeDir + 'layouts/**/*.html',
-        themeDir + 'content/**/*.html',
-        // 'layouts/**/*.html',
-        // 'content/**/*.html',
+        'content/**/*.html',
         // 'exampleSite/layouts/**/*.html',
         // 'exampleSite/content/**/*.html',
     ],
@@ -25,6 +22,14 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     }
 })
 
+const nano = require('cssnano')({
+    preset: ['advanced', {
+        discardComments: {
+        removeAll: true,
+        }
+    }]
+})
+
 module.exports = {    
     plugins: [        
         require('postcss-import')({
@@ -34,6 +39,6 @@ module.exports = {
         require('autoprefixer')({
             path: [themeDir]
         }),
-        ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])
+        ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss, nano] : [])
     ]
 }

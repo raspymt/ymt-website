@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Yves-Marie Trublin | Web Developer"
 theme = "ymt"
 
+disableHugoGeneratorInject = true
+disableKinds = ["page", "section", "taxonomy", "term"]
+
 author = "Yves-Marie Trublin"
 copyright = "Copyright © 2020, Yves-Marie Trublin, all rights reserved."
 
